@@ -148,3 +148,9 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'jonathanmedhed@gmail.com'
 EMAIL_HOST_PASSWORD = 'M4ld1t4s34-05'
 EMAIL_USE_TLS=True
+
+#Deployment
+try:
+    from .local_settings import *
+except ImportError:
+    pass
